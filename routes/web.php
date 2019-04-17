@@ -17,3 +17,13 @@ Route::get('/', function () {
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin','DashboardController@index')->name('dashboard');
+
+Route::get('/admin/pelayan','PelayanController@index')->name('pelayan');
+
+Route::get('/admin/pelayan/wl','PelayanController@listWl')->name('wl');
+
+Route::get('/pelayan','PelayanController@formPelayan')->name('addPelayan');
+
+Route::post('/pelayan/proses/', 'PelayanController@addPelayan');
