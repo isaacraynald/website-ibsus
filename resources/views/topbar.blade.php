@@ -9,12 +9,16 @@
                 </a> </div>
             <div class="collapse navbar-collapse hidden-xs">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{url('/home')}}">Home</a></li>
-                    <li><a href="#jump1">Jadwal Kegiatan</a></li>
+                    <li {{Route::is('home')? 'class=active':''}}><a href="{{url('/home')}}">
+                            <span>Home</span>
+                        </a></li>
+                    <li {{Route::is('addPelayan')? 'class=active':''}}><a href="{{url('/pelayan')}}">
+                            <span>Pelayan</span>
+                        </a></li>
                     <li><a href="#jump2">Formulir</a></li>
                     <li><a href="#jump3">Dokumentasi</a></li>
                     <li><a href="#jump4">Bulib</a></li>
-                    <li><a href="#jump5">Pelayan</a></li>
+                    <li><a href="#jump5">Jadwal Kegiata</a></li>
                     <li><a href="#jump6">Tentang Ibsus</a></li>
                 </ul>
             </div>

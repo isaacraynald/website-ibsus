@@ -1,7 +1,6 @@
 @extends('layout.template')
 
 @section('content')
-    <div class="jumper" id="jump0"></div>
     <div class="section type-1 big splash">
         <div class="container">
             <div class="splash-block">

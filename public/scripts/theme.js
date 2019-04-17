@@ -2,7 +2,7 @@ $(function() {
   $('#Grid').mixitup();
 
 	$('.navbar-nav a').click(function (e) {
-		e.preventDefault();
+		//e.preventDefault();
 		$(this).parent('li').toggleClass('active');
 		$(this).parent('li').siblings('.active').removeClass('active');
 	})
